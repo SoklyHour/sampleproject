@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokly Hour</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font-Awesome for menu bar-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<!-- Header Area  -->
+        <header class="header-area">
+            <div class="container">
+                <div class="header">
+                    <a href="" class="logo">Sokly</a>   
+                    <ul class="navbar">
+                        <li><a href="#final" class="nav__link">Home</a></li>
+                        <li><a href="about.html" class="nav__link">About</a></li>
+                        <li><a href="education.html" class="nav__link">Education</a></li>
+                        <li><a href="projects.html" class="nav__link">Projects</a></li>
+                        <li><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+
+                    <div class="menu_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div> 
+        </header>
+
+        <!--- Home Page -->
+        <!-- Main Content Area -->
+    <main class="main-content" id="final">
+        <div class="Homepage">
+
+            <div class="profile-photo">
+                <img src="professional-picture-me.jpg" alt="SoklyHour professional picture">
+            </div>
+
+            <div class="homepage-info">
+                <h2>Hello, I'm </h2><br>
+                <h1>Sokly Hour</h1><br>
+                <p>Sokly is an inspired and ambitious software engineer who aspires to push the limits of technology by creating innovative solutions. He has a strong passion for problem-solving and coding, and he is always looking for new possibilities to learn and advance in this dynamic industry.</p>   
+                <div class="btn-group">
+                    <!-- call-to-action for a professional portfolio website-->
+                    <a href="SoklyResume.pdf" class="btn" target="_blank">Download CV</a>
+                    <a href="mailto:soklyhour011@gmail.com" class="btn">Contact</a>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer id="footer">
+        <small>&copy; Sokly Hour INF 250 Final Project. COPYRIGHT.</small>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu_icon");
+            const navbar = document.querySelector(".navbar");
+    
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("show");
+            });
+        });
+    </script>
+    
+</body>
+</html>
