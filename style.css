@@ -1,0 +1,464 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+a{
+    text-decoration: none ;
+    color:#ffffff;
+    transition:1s; 
+}
+/* Styling for unvisited links */
+.nav__link{
+  color:#ffffff;
+}
+.nav__link:hover{
+  color: #03c67b;
+}
+
+
+/* Styling for visited links */
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em; /* Equivalent to 20px */
+    line-height: 1.5;
+    background-color: #252525;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+}
+
+/* Header */
+
+.header-area {
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu_icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+  /*--homepage--*/
+  
+.Homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 6em; /* Equivalent to 96px */
+}
+
+.Homepage .profile-photo {
+    width: 20em; 
+    height: 20em; 
+    border-radius: 30%;
+    overflow: hidden;
+    border: 0.9375em solid #024677; /* Equivalent to 15px */
+    box-shadow: 0.3125em 0.4375em 1.5625em rgba(0, 0, 0, 1); /* Equivalent to 5px 7px 25px */
+}
+
+  /* creative profile photo hover effect */
+.Homepage .profile-photo img:hover{
+    transform: scale(1.1);
+}
+
+.homepage-info{
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-info h2{
+    color: #03c67b;
+}
+
+.homepage-info h1{
+    color: #03c67b;
+    font-size: 4em; 
+}
+
+.homepage-info p{
+    color:#ffffff;
+}
+
+
+/*--button--*/
+
+.btn-group {
+    margin: 3.125em 0; /* Equivalent to 50px top and bottom margin */
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 0.75em 1.25em; /* Equivalent to 12px top and bottom padding, 20px left and right padding */
+    margin-right: 1.5625em; /* Equivalent to 25px right margin */
+    border-radius: 1.875em; /* Equivalent to 30px border-radius */
+    border:2px solid #92dffb; /* Equivalent to 2px solid border */
+}
+
+/*---------------------------About---------------------------*/
+
+.about-area{
+  padding-top: 8.125em; 
+ background-color: #202020;
+}
+.about{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 3.125em;
+}
+.about-content{
+ flex-basis: 60%;
+}
+.about-content h4{
+ color:#03c67b;
+ font-size: 40px;
+ line-height: 70px;
+ text-transform: capitalize;
+}
+.about-content ul {
+ color:#fff;
+ text-align: justify;
+}
+.about-content table {
+  color:#fff;
+  text-align: justify;
+ }
+
+.about-content ul li {
+ list-style-type: disc;
+ margin-bottom: 10px;
+}
+
+.second-picture{
+ flex-basis: 35%;
+}
+
+
+/* Education and Internship */
+
+.education-content .row{
+ display: flex;
+ 
+}
+
+.education-content .title{
+ color: #03c67b;
+}
+.education-content .row .education,
+.education-content .row .internship
+{
+ color: #e5e5e5;
+ flex:0 0 50%;
+ margin-top: 28px;
+ max-width: 50%;
+} 
+
+.education-content .row .timeline{
+ padding: 30px 15px;
+ width: 100%;
+ position: relative;
+}
+.education-content .row .timeline-item{
+ position:relative;
+ padding-left: 37px;
+ padding-bottom: 50px; 
+}
+.education-content .row  .internship .timeline-item{
+ position:relative;
+ padding-bottom: 30px; 
+ padding-left: 37px;
+
+}
+.education-content .row .timeline-item:last-child{
+ padding-bottom: 0;
+}
+.education-content .row .timeline-item::before{
+background-color: #03c67b;  
+ content: "";
+ width: 1px;
+ position: absolute;
+ height: 100%;
+ left: 7px;
+ top: 0;
+}
+
+.education-content .row .circle-dot{
+ position: absolute;
+ left: 0;
+ top: 0;
+ height: 15px;
+ width: 15px;
+ border-radius: 50%;
+ background-color: #e5e5e5;
+}
+.education-content .row .timeline-title  {
+ font-weight: 800;
+ font-size: 18px;
+ margin-bottom: 12px;
+}
+.education-content .row .internship .timeline-title  {
+ font-weight: 700;
+ font-size: 18px;
+ margin-bottom: 8px;
+}
+
+/*--Projects--*/
+.project-content{
+ padding: 90px 0;
+}
+.project-title{
+ margin-bottom: 60px;
+ text-align: center;
+}
+.project-title h4{
+ text-transform: uppercase;
+ font-size: 40px;
+ line-height: 40px;
+ color: #03c67b;
+ margin-bottom: 20px;
+}
+.project-title p{
+ color: #f8eeee;
+}
+.projects{
+ display: flex;
+ justify-content:space-between;
+ flex-wrap: wrap;
+}
+.project{
+   padding: 30px 15px;
+   color: #e5e5e5;
+   border: 2px solid #e5e5e5;
+   border-radius: 10px;
+   width: 100%;
+   position: relative;
+   padding: 25px;
+   text-align: center;
+   flex-basis: 32%;
+   transition: .3s;
+}
+.project i{
+ background-color: #03c67b;
+ width: 60px;
+ height: 60px;
+ color: #333333;
+ font-size: 26px;
+ line-height: 60px;
+ border-radius: 50%;
+}
+.project h4{
+ font-size: 26px;
+ text-transform: capitalize;
+ margin: 20px 0;
+}
+.project p{
+ text-align: justify;
+}
+.project:hover{
+ border-color: #03c67b;
+}
+
+
+ /*--Responsive Design --*/
+
+ /* Medium layout */
+@media only screen and (min-width:1000px) and (max-width:1200px){
+  .container{
+    width: 970px;
+  }
+}
+ @media(max-width:1050px){
+   .Homepage{ 
+     flex-direction: column;
+     padding-top: 2.5em;
+   }
+   .profile-text{
+     padding: 2.5em 0em; /* Equivalent to 40px */
+   }
+   .FirstElement{ 
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .profile-text{
+    padding: 40px 0px;
+  }
+ }
+ 
+ /* tablet layout */
+ @media only screen and (min-width:768px) and (max-width:999px){
+  .container{
+    width: 750px;
+  } 
+   
+   
+ }  
+/* Mobile Layout */
+@media only screen and (max-width:768px){
+  .container{
+      width: 21.875em; /* Equivalent to 350px */
+  }
+  
+  .header .menu_icon {
+      display: block;
+      
+    }
+  
+  .header ul{
+      display: none;
+    }
+
+  .header i{
+      color: #ffffff;
+    }
+  
+  .homepage-info{
+    width: 21.875em; /* Equivalent to 350px */
+    }   
+  
+  .btn-group .btn {
+      width: 100%; /* Full width for buttons */
+      margin: 0.625em 0; /* Equivalent to 10px top and bottom margin */
+  }
+  .Homepage .homepage-info p{
+      text-align: justify;
+    }
+  
+  .homepage-info h2{
+    padding-top: 1.25em; /* Equivalent to 20px */
+    padding-bottom: 0.5em; /* Equivalent to 8px */
+    }
+    .about {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align content on smaller screens */
+    }
+  
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 1;
+  }
+  
+  .navbar.show {
+      display: flex;
+  }
+  
+  .navbar li {
+      margin: 0;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #555;
+  }
+  
+  .menu_icon {
+      display: block;
+  }
+  .profile-text{
+    width: 350px;
+  }
+  .FirstElement .profile-text p{
+    text-align: justify;
+  }
+  .about{
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .second-picture{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+   }
+  .project{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+   }
+  } 
+
+  /* Styles for phone-sized screens */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+  /*--Footer--*/
+#footer {
+    font-size: 0.9375em; /* Equivalent to 15px */
+    color: #c7c5c5;
+    text-align: center;     
+}
+      

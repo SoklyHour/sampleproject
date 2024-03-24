@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokly Hour - Projects</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font-Awesome for menu bar-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Area  -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">Sokly</a>   
+                <ul class="navbar">
+                    <li><a href="final.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="education.html" class="nav__link">Education</a></li>
+                    <li><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+
+    <!-- Projects -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-title">
+                <h4>My Projects</h4>
+                <hr>
+                <p>Checkout my projects, where creativity meets innovation</p>
+            </div>
+            <div class="projects">
+                <!-- 1st Project -->
+
+                    <div class="project">
+                        <!-- Relative Hyperlink -->
+                        <a href="project1.html" target="_blank">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <h4>Informatics Department Trip Signup</h4>
+                            <p>The "Informatics Department Trip Signup" is a web page or form meant to make it easier for students to register for a trip arranged by the Informatics Department. This form collects critical information from participants in order to facilitate a seamless planning and coordinating process.</p>
+                    </a>
+                    </div>
+            
+
+                <!-- 2nd Project -->
+                <div class="project">
+                    <i class="fa fa-car"></i>
+                    <h4>Car store website</h4>
+                    <p>Car store website is an online platform dedicated to showcasing and selling a variety of automobiles. It serves as a virtual showroom where users can explore different makes and models of cars, view detailed information about each vehicle, and, in some cases, make purchases directly through the website.</p>
+                </div>
+                <!-- 3rd Project -->
+                <div class="project">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h4>1 REP MAX Caculator</h4>
+                    <p>Strength Level calculates your performance in compound exercises like bench press, deadlift and squat.
+                        Enter your one-rep max and we will rank you against other lifters at your bodyweight. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Area -->
+    <footer id="footer">
+        <small>&copy; Sokly Hour INF 250 Final Project. COPYRIGHT.</small>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu_icon");
+            const navbar = document.querySelector(".navbar");
+    
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>

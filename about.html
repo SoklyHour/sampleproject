@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokly Hour - About</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font-Awesome for menu bar-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Area  -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">Sokly</a>   
+                <ul class="navbar">
+                    <li><a href="final.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="education.html" class="nav__link">Education</a></li>
+                    <li><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <!-- About section -->
+   <section class="about-area">
+        <div class="container">
+            <div class="about">
+                
+                <div class="about-content">
+                    <h4>About Me</h4>  
+                    <ul>
+                        <li> At FHSU, I am now pursuing a bachelor's degree in web development. I've established a strong foundation in software development. </li>
+                        <li> In the ever-changing field of software engineering, I strongly believe in the need for constant learning and being adaptive. </li>
+                        <li>Please browse my work and contact me if you have any questions or would like to collaborate. </li>
+                        <!-- External Link -->
+                        <li> Checkout my linkedin: <a href="https://www.linkedin.com/in/soklyhour/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                    <h4>Skills</h4>
+                    
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Skill</th>
+                                    <th>Level</th>
+                                    <th>Experience</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Languages</td>
+                                    <td>JavaScript</td>
+                                    <td>Beginner</td>
+                                    <td>1 year</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>Web Design</td>
+                                    <td>HTML, CSS</td>
+                                    <td>Beginner</td>
+                                    <td>1 year</td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Version Control</td>
+                                    <td>Git</td>
+                                    <td>Intermediate</td>
+                                    <td>2 years</td>
+                                </tr>
+                                <tr>
+                                    <td>Database</td>
+                                    <td>SQL</td>
+                                    <td>Beginner</td>
+                                    <td>1 year</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                
+                </div>
+                                
+                <div class="second-picture">
+                    <img src="secondimg.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Area -->
+    <footer id="footer">
+        <small>&copy; Sokly Hour INF 250 Final Project. COPYRIGHT.</small>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu_icon");
+            const navbar = document.querySelector(".navbar");
+    
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatics Department Trip Signup</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" id="informaticslogo" alt="informatics-logo">
+        <h1>Informatics Department Trip Signup</h1>
+    </header>
+
+    <main>
+        <form action="https://webdevbasics.net/scripts/pacific.php" method="POST">
+
+            <fieldset>
+                <div>
+                    <label for="name">*Student Name</label>
+                    <input type="text" id="name" name="name" required="required">
+                </div>
+                <div>
+                    <label for="email">*Student Email</label>
+                    <input type="email" id="email" name="email" required="required">
+                </div>
+                <div>
+                    <label for="phone">*Student Phone Number</label>
+                    <input type="tel" id="phone" name="phone"  required="required">
+                </div>
+                <div>
+                    <label for="major">Student's Major or Field of Study</label>
+                    <input type="text" id="major" name="major">
+                </div>
+                <div>
+                    <label for="year">Year Classification:</label>
+                                <select name="year" id="year">
+                                    <option value="1" selected>Select One</option>
+                                    <option value="freshman">Freshman</option>
+                                    <option value="sophmore">Sophmore</option>
+                                    <option value="junior">Junior</option>
+                                    <option value="senior">Senior</option>
+                                    <option value="graduate">Graduate</option>
+                                </select>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div>
+                    <label for="payment">Payment Type</label><br>
+                    <select id="payment" name="payment" required>
+                        <option value="" disabled selected>Select Payment Type</option>
+                        <option value="cash">Cash</option>
+                        <option value="card">Card</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <h3>Transportation(Check both if alternating.)</h3>
+                    <label for="personalVehicle">Personal Vehicle</label>
+                    <input type="checkbox" name="vehicle" id="personalVehicle" value="personalVehicle">
+                </div>
+                <div>
+                    <label for="universityVehicle">University Vehicle</label>
+                    <input type="checkbox" name="vehicle" id="universityVehicle" value="universityVehicle">
+                </div>
+                <div>
+                    <label for="comments">Comments</label><br>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+</html>

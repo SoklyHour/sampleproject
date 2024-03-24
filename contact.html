@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokly Hour - Contact</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font-Awesome for menu bar-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     <style>
+        /* embedded style sheet with the form styles */
+    /*---Contact Me--*/
+        /* Styles for the form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+
+        .contact-content {
+        padding: 100px 0;
+        text-align: center;
+        }
+
+        .contact-content .contact-title h4 {
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #03c67b;
+        padding-bottom: 10px;
+        }
+
+        .contact {
+        max-width: 700px;
+        margin: auto;
+        }
+
+        .contact input, .contact textarea {
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        margin-bottom: 10px;
+        }
+
+        .contact .submit {
+        width: auto;
+        background-color: #03c67b;
+        padding: 10px 40px;
+        font-weight: bold;
+        font-size: 18px;
+        }
+
+        .contact .submit:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        }
+        iframe{
+            width:350px;
+            height:215px;
+            border: 0;
+        }
+
+    </style>
+  </head>
+<body>
+    <!-- Header Area  -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">Sokly</a>   
+                <ul class="navbar">
+                    <li><a href="final.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="education.html" class="nav__link">Education</a></li>
+                    <li><a href="projects.html" class="nav__link">Projects</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+ <!-- Contact  -->
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-title">
+                <h4>Contact Me</h4>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/2kK6WyfmxoQ" allowfullscreen></iframe>
+            </div>
+            <div class="contact">
+                <form>
+                    <!-- Text Input for Name -->
+                    <input type="text" name="NAME" placeholder="Name" required>
+            
+                    <!-- Email Input -->
+                    <input type="email" name="EMAIL" placeholder="Email" required>
+            
+                    <!-- Text Input for Subject -->
+                    <input type="text" name="SUBJECT" placeholder="Subject">
+            
+                    <!-- Textarea for Message -->
+                    <textarea name="MESSAGE" placeholder="Message"></textarea>
+        
+                    <!-- Radio Input for hire or freelancing -->
+                    <label for="freelancing">Freelancing</label>
+                    <input type="radio" name="freelancing" id="freelancing" value="freelancing">
+
+                    <label for="hire">Hire</label>
+                    <input type="radio" name="hire" id="hire" value="hire">
+            
+                    <!-- Checkbox Input for frontend or backend -->
+                    <label for="frontend">Frontend Web Development</label>
+                    <input type="checkbox" name="INTERESTS" id="frontend" value="Frontend Web Development">
+
+                    <label for="backend">Backend Web Development</label>
+                    <input type="checkbox" name="INTERESTS" id="backend" value="Backend Web Development">
+
+                    <!-- Submit Button -->
+                    <input type="submit" value="Send Message" class="submit">
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer Area -->
+    <footer id="footer">
+        <small>&copy; Sokly Hour INF 250 Final Project. COPYRIGHT.</small>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu_icon");
+            const navbar = document.querySelector(".navbar");
+    
+            menuIcon.addEventListener("click", function () {
+                navbar.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>
